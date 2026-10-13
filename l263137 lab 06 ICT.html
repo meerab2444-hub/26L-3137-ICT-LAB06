@@ -1,0 +1,84 @@
+<html>
+ <head>
+ <title>Continental Hotel Reservation Form</title>
+ <style>
+ table {background-color: lightblue;}
+ caption {color: red;}
+ th {padding: 10px;}
+ td {padding: 10px;}
+ </style>
+ </head>
+ <body>
+ <form action="/action_page.php">
+ <div style="background-color:lightgray; padding:10px; width:500px; height:600px;">
+ <table border="1">
+ <caption>Continental Hotel Reservation Form</caption>
+ <tr>
+ <th><label for="name">Name</label></th>
+ <td><input type="text" id="name" name="name"></td>
+ </tr>
+ <tr>
+ <th><label for="email">eMail</label></th>
+ <td><input type="email" id="email" name="email" value="info@continental.pk"></td>
+ </tr>
+ <tr>
+ <th><label for="mobile">Mobile No</label></th>
+ <td><input type="text" id="mobile" name="mobile"></td>
+ </tr>
+ <tr>
+ <th><label for="arrival">Arrival Time</label></th>
+ <td><input type="text" id="arrival" name="arrival"></td>
+ </tr>
+ <tr>
+ <th><label for="departure1">Departure</label></th>
+ <td>
+ <input type="text" id="departure1" name="departure1">
+ <input type="text" id="departure2" name="departure2">
+ </td>
+ </tr>
+ <tr>
+ <th>Room Type</th>
+ <td>
+ <input type="radio" id="single" name="room" value="single">
+ <label for="single">Single</label>
+ <input type="radio" id="double" name="room" value="double">
+ <label for="double">Double</label><br>
+ <input type="radio" id="suite" name="room" value="suite">
+ <label for="suite">Presidential Suite</label>
+ </td>
+ </tr>
+ <tr>
+ <th>Preferences</th>
+ <td>
+ <input type="checkbox" id="pref1" name="pref1">
+ <label for="pref1">Non-Smoking</label><br>
+ <input type="checkbox" id="pref2" name="pref2">
+ <label for="pref2">Internet</label><br>
+ <input type="checkbox" id="pref3" name="pref3">
+ <label for="pref3">Firm Mattress</label>
+ </td>
+ </tr>
+ <tr>
+ <th>Mode of Payment</th>
+ <td>
+ <input type="checkbox" id="cash" name="cash">
+ <label for="cash">Cash</label>
+ <input type="checkbox" id="check" name="check">
+ <label for="check">Check</label><br>
+ <input type="checkbox" id="card" name="card">
+ <label for="card">Credit Card</label>
+ <select id="cardtype" name="cardtype">
+ <option value="">Select Card</option>
+ <option value="visa">Visa</option>
+ <option value="master">MasterCard</option>
+ </select>
+ </td>
+ </tr>
+ <tr>
+ <th colspan="2"><input type="submit" value="Send Data"></th>
+ </tr>
+ </table>
+ </div>
+ </form>
+ </body>
+</html>
